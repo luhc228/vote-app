@@ -17,9 +17,11 @@ const totalVotes = computed(() => {
   <main class="h-screen flex flex-col justify-center items-center">
   <div v-if="voteData">
     <div class="space-y-3 sm:space-y-4 min-w-2xs">
-      <div v-for="(option, index) in voteData.options" 
-          :key="option" 
-          class="flex flex-col sm:flex-row sm:items-center sm:justify-between p-3 sm:p-4 bg-gray-50 dark:bg-gray-800 rounded">
+      <div
+        v-for="(option, index) in voteData.options" 
+        :key="option" 
+        class="flex flex-col sm:flex-row sm:items-center sm:justify-between p-3 sm:p-4 bg-gray-50 dark:bg-gray-800 rounded mb-3"
+      >
         <span class="font-medium text-gray-800 dark:text-white mb-2 sm:mb-0">
           {{ option }}
         </span>
